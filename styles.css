@@ -1,0 +1,116 @@
+body {
+    background-color: #002f3b;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, serif;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 0 12px 6px rgba(54,54,54,0.72);
+    width: 80%;
+    max-width: 600px;
+    min-height: 300px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.container h1 {
+    text-align: center;
+    color: #363636;
+}
+
+.container .btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container .btn-container button {
+    color: white;
+    background-color: green;
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.container .btn-container button:focus {
+    outline: none;
+}
+
+.container .btn-container button:active {
+    transform: scale(0.98);
+}
+
+.container .btn-container button:last-child {
+    margin-left: 20px;
+    background-color: #002f3b;
+}
+
+.container .btn-container#resetCon {
+    margin: 0;
+}
+
+.container .btn-container#resetCon button {
+    margin-top:0;
+    background-color: red;
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#input-container .input label {
+    display: block;
+    color: #7d7d7d;
+    margin-bottom: 5px;
+}
+
+#input-container .input {
+    width: 400px;
+    margin: 8px;
+}
+
+#input-container .input input {
+    margin-left: 20px;
+    padding: 7px;
+    border-radius: 0;
+    border: 1px solid #cacaca;
+}
+
+#input-container .input input:focus {
+    outline: 1px solid #002f3b;
+}
+
+#input-container .input input::placeholder {
+    color: #bababa;
+}
+
+#text {
+    background-color: #e3e3e3;
+    width: 80%;
+    height: 70px;
+    margin: 0 8% 20px;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#text p {
+    margin: 12px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+/*520*/
+
