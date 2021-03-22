@@ -114,3 +114,8 @@ body {
 
 /*520*/
 
+@media screen and (max-width: 530px){
+    #input-container .input label {
+        margin-left: 20px;
+    }
+}
