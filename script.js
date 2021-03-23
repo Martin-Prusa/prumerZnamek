@@ -57,7 +57,7 @@ let calculateAverage = function() {
         let weightIn = document.getElementById('weight'+i)
         let x = parseInt(grade.value)
         let y = parseInt(weightIn.value)
-        if(!isNaN(x) && !isNaN(y)) {
+        if(!isNaN(x) && !isNaN(y) && isPositive(y) && isPositive(x)) {
             avg += (x*(y/100))
             weight += y/100
         }
@@ -73,6 +73,11 @@ let calculateAverage = function() {
         isFailing((avg/weight))
     }
 
+}
+
+function isPositive(number) {
+    if(number >= 0) return true
+    return false
 }
 
 function displayError() {
